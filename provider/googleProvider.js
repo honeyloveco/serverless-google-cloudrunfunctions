@@ -3,6 +3,7 @@
 const path = require('path');
 const os = require('os');
 
+// eslint-disable-next-line import/no-extraneous-dependencies
 const _ = require('lodash');
 const google = require('googleapis').google;
 
@@ -180,7 +181,7 @@ class GoogleProvider {
       deploymentmanager: google.deploymentmanager('v2'),
       storage: google.storage('v1'),
       logging: google.logging('v2'),
-      cloudfunctions: google.cloudfunctions('v1'),
+      cloudfunctions: google.cloudfunctions('v2'),
     };
 
     this.configurationVariablesSources = {
