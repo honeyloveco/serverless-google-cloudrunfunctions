@@ -49,10 +49,10 @@ jobs:
         run: echo $LAST_VALIDATED_COMMIT_HASH > last-validated-commit-hash.txt
 
       - name: Upload last validated commit hash
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: last-validated-commit-hash
-          path: last-validated-commit-hash.txt
+          path: last-validated-commit-hash
 
   tagIfNewVersion:
     name: ubuntu-latest
