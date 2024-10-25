@@ -57,12 +57,7 @@ class GoogleProvider {
         cloudFunctionRuntime: {
           // Source: https://cloud.google.com/functions/docs/concepts/exec#runtimes
           enum: [
-            'nodejs6', // decommissioned
-            'nodejs8', // deprecated
-            'nodejs10',
-            'nodejs12',
-            'nodejs14',
-            'nodejs16', // recommended
+            'nodejs18', // recommended
             'python37',
             'python38',
             'python39',
