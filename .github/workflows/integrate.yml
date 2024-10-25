@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Retrieve dependencies from cache
         id: cacheNpm
@@ -29,9 +29,9 @@ jobs:
           restore-keys: npm-v18-${{ runner.os }}-${{ github.ref }}-
 
       - name: Install Node.js and npm
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: 20
 
       - name: Install dependencies
         if: steps.cacheNpm.outputs.cache-hit != 'true'
@@ -40,6 +40,19 @@ jobs:
           npm update --save-dev --no-save
       - name: Unit tests
         run: npm test
+
+      - name: Get last validated commit hash
+        id: get_commit_hash
+        run: echo "LAST_VALIDATED_COMMIT_HASH=$(git rev-parse HEAD)" >> $GITHUB_ENV
+
+      - name: Create last validated commit hash file
+        run: echo $LAST_VALIDATED_COMMIT_HASH > last-validated-commit-hash.txt
+
+      - name: Upload last validated commit hash
+        uses: actions/upload-artifact@v3
+        with:
+          name: last-validated-commit-hash
+          path: last-validated-commit-hash.txt
 
   tagIfNewVersion:
     name: ubuntu-latest
