@@ -15,7 +15,7 @@ jobs:
       # Ensure release notes are published by our `serverless-ci` bot
       # (If instead we'd use unconditionally provided secrets.GITHUB_TOKEN then
       # "github-actions" user will be listed as release publisher)
-      GITHUB_TOKEN: ${{ secrets.USER_GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2

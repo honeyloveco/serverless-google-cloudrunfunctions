@@ -11,8 +11,8 @@ env:
   FORCE_COLOR: 1
 
 jobs:
-  linuxNode16:
-    name: '[Linux] Node.js 16: Unit tests'
+  linuxNode18:
+    name: '[Linux] Node.js 18: Unit tests'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -25,13 +25,13 @@ jobs:
           path: |
             ~/.npm
             node_modules
-          key: npm-v16-${{ runner.os }}-${{ github.ref }}-${{ hashFiles('package.json') }}
-          restore-keys: npm-v16-${{ runner.os }}-${{ github.ref }}-
+          key: npm-v18-${{ runner.os }}-${{ github.ref }}-${{ hashFiles('package.json') }}
+          restore-keys: npm-v18-${{ runner.os }}-${{ github.ref }}-
 
       - name: Install Node.js and npm
         uses: actions/setup-node@v1
         with:
-          node-version: 16.x
+          node-version: 18.x
 
       - name: Install dependencies
         if: steps.cacheNpm.outputs.cache-hit != 'true'
@@ -44,7 +44,7 @@ jobs:
   tagIfNewVersion:
     name: ubuntu-latest
     runs-on: ubuntu-latest
-    needs: [linuxNode16]
+    needs: [linuxNode18]
     timeout-minutes: 30 # Default is 360
     steps:
       - name: Checkout repository
@@ -55,7 +55,7 @@ jobs:
           fetch-depth: 30
           # Tag needs to be pushed with real user token, otherwise pushed tag won't trigger the actions workflow
           # Hence we're passing 'serverless-ci' user authentication token
-          token: ${{ secrets.USER_GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Resolve last validated commit hash (for `git diff` purposes)
         uses: actions/download-artifact@v4
