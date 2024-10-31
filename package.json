@@ -1,6 +1,6 @@
 {
   "name": "serverless-google-cloudrunfunctions",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Provider plugin for the Serverless Framework which adds support for Google Cloud Functions.",
   "author": "Honeylove",
   "repository": "honeyloveco/serverless-google-cloudfunctions",
@@ -18,11 +18,6 @@
   "eslintConfig": {
     "extends": "@serverless/eslint-config/node",
     "root": true
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.js": [
