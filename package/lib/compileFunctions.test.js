@@ -98,7 +98,7 @@ describe('CompileFunctions', () => {
         func1: {
           handler: 'func1',
           memorySize: 1024,
-          runtime: 'nodejs10',
+          runtime: 'nodejs20',
           events: [{ http: 'foo' }],
         },
       };
@@ -109,11 +109,11 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
             availableMemoryMb: 1024,
-            timeout: '60s',
+            timeout: '500s',
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
               url: 'foo',
@@ -146,11 +146,11 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
             availableMemoryMb: 1024,
-            timeout: '60s',
+            timeout: '500s',
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
               url: 'foo',
@@ -183,10 +183,10 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
-            availableMemoryMb: 256,
+            availableMemoryMb: 512,
             timeout: '120s',
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
@@ -220,10 +220,10 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
-            availableMemoryMb: 256,
+            availableMemoryMb: 512,
             timeout: '120s',
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
@@ -259,11 +259,11 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
-            availableMemoryMb: 256,
-            timeout: '60s',
+            availableMemoryMb: 512,
+            timeout: '500s',
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
               url: 'foo',
@@ -300,11 +300,11 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
-            availableMemoryMb: 256,
-            timeout: '60s',
+            availableMemoryMb: 512,
+            timeout: '500s',
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
               url: 'foo',
@@ -345,11 +345,11 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
-            availableMemoryMb: 256,
-            timeout: '60s',
+            availableMemoryMb: 512,
+            timeout: '500s',
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
               url: 'foo',
@@ -387,14 +387,14 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
-            availableMemoryMb: 256,
+            availableMemoryMb: 512,
             environmentVariables: {
               TEST_VAR: 'test',
             },
-            timeout: '60s',
+            timeout: '500s',
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
               url: 'foo',
@@ -429,14 +429,14 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
-            availableMemoryMb: 256,
+            availableMemoryMb: 512,
             environmentVariables: {
               TEST_VAR: 'test',
             },
-            timeout: '60s',
+            timeout: '500s',
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
               url: 'foo',
@@ -476,16 +476,16 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
-            availableMemoryMb: 256,
+            availableMemoryMb: 512,
             environmentVariables: {
               TEST_VAR: 'test_var',
               TEST_VALUE: 'foobar',
               TEST_FOO: 'foo',
             },
-            timeout: '60s',
+            timeout: '500s',
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
               url: 'foo',
@@ -527,10 +527,10 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
-            availableMemoryMb: 256,
+            availableMemoryMb: 512,
             secretEnvironmentVariables: [
               {
                 key: 'TEST_SECRET',
@@ -538,7 +538,7 @@ describe('CompileFunctions', () => {
                 version: 'latest',
               },
             ],
-            timeout: '60s',
+            timeout: '500s',
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
               url: 'foo',
@@ -578,16 +578,16 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
-            availableMemoryMb: 256,
+            availableMemoryMb: 512,
             secretEnvironmentVariables: [
               { key: 'TEST_SECRET', secret: 'secret1', version: 'latest' },
               { key: 'TEST_SECRET2', secret: 'secret2', version: 'latest' },
               { key: 'TEST_SECRET_PROVIDER', secret: 'secretprovider', version: 'latest' },
             ],
-            timeout: '60s',
+            timeout: '500s',
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
               url: 'foo',
@@ -623,11 +623,11 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
-            availableMemoryMb: 256,
-            timeout: '60s',
+            availableMemoryMb: 512,
+            timeout: '500s',
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
               url: 'foo',
@@ -678,11 +678,11 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
-            availableMemoryMb: 256,
-            timeout: '60s',
+            availableMemoryMb: 512,
+            timeout: '500s',
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             eventTrigger: {
               eventType: 'foo',
@@ -697,11 +697,11 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func2',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func2',
             entryPoint: 'func2',
-            availableMemoryMb: 256,
-            timeout: '60s',
+            availableMemoryMb: 512,
+            timeout: '500s',
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             eventTrigger: {
               eventType: 'foo',
@@ -725,7 +725,7 @@ describe('CompileFunctions', () => {
         func1: {
           handler: 'func1',
           memorySize: 128,
-          runtime: 'nodejs10',
+          runtime: 'nodejs20',
           vpc: 'projects/pg-us-n-app-123456/locations/us-central1/connectors/my-vpc',
           events: [{ http: 'foo' }],
         },
@@ -737,11 +737,11 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
             availableMemoryMb: 128,
-            timeout: '60s',
+            timeout: '500s',
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
               url: 'foo',
@@ -765,7 +765,7 @@ describe('CompileFunctions', () => {
         func1: {
           handler: 'func1',
           memorySize: 128,
-          runtime: 'nodejs10',
+          runtime: 'nodejs20',
           maxInstances: 10,
           vpc: 'projects/pg-us-n-app-123456/locations/us-central1/connectors/my-vpc',
           events: [{ http: 'foo' }],
@@ -778,11 +778,11 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
             availableMemoryMb: 128,
-            timeout: '60s',
+            timeout: '500s',
             maxInstances: 10,
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
@@ -807,14 +807,14 @@ describe('CompileFunctions', () => {
         func1: {
           handler: 'func1',
           memorySize: 128,
-          runtime: 'nodejs10',
+          runtime: 'nodejs20',
           vpc: 'projects/pg-us-n-app-123456/locations/us-central1/connectors/my-vpc',
           events: [{ http: 'foo' }],
         },
         func2: {
           handler: 'func2',
           memorySize: 128,
-          runtime: 'nodejs10',
+          runtime: 'nodejs20',
           maxInstances: 10,
           vpc: 'projects/pg-us-n-app-123456/locations/us-central1/connectors/my-vpc',
           events: [{ http: 'bar' }],
@@ -827,11 +827,11 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
             availableMemoryMb: 128,
-            timeout: '60s',
+            timeout: '500s',
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
               url: 'foo',
@@ -845,11 +845,11 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func2',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func2',
             entryPoint: 'func2',
             availableMemoryMb: 128,
-            timeout: '60s',
+            timeout: '500s',
             maxInstances: 10,
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
@@ -874,7 +874,7 @@ describe('CompileFunctions', () => {
         func1: {
           handler: 'func1',
           memorySize: 128,
-          runtime: 'nodejs10',
+          runtime: 'nodejs20',
           minInstances: 5,
           vpc: 'projects/pg-us-n-app-123456/locations/us-central1/connectors/my-vpc',
           events: [{ http: 'foo' }],
@@ -887,11 +887,11 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
             availableMemoryMb: 128,
-            timeout: '60s',
+            timeout: '500s',
             minInstances: 5,
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
@@ -916,14 +916,14 @@ describe('CompileFunctions', () => {
         func1: {
           handler: 'func1',
           memorySize: 128,
-          runtime: 'nodejs10',
+          runtime: 'nodejs20',
           vpc: 'projects/pg-us-n-app-123456/locations/us-central1/connectors/my-vpc',
           events: [{ http: 'foo' }],
         },
         func2: {
           handler: 'func2',
           memorySize: 128,
-          runtime: 'nodejs10',
+          runtime: 'nodejs20',
           minInstances: 5,
           vpc: 'projects/pg-us-n-app-123456/locations/us-central1/connectors/my-vpc',
           events: [{ http: 'bar' }],
@@ -936,11 +936,11 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func1',
             entryPoint: 'func1',
             availableMemoryMb: 128,
-            timeout: '60s',
+            timeout: '500s',
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
               url: 'foo',
@@ -954,11 +954,11 @@ describe('CompileFunctions', () => {
           name: 'my-service-dev-func2',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
-            runtime: 'nodejs10',
+            runtime: 'nodejs20',
             function: 'my-service-dev-func2',
             entryPoint: 'func2',
             availableMemoryMb: 128,
-            timeout: '60s',
+            timeout: '500s',
             minInstances: 5,
             sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
             httpsTrigger: {
@@ -984,7 +984,7 @@ describe('CompileFunctions', () => {
       func1: {
         handler: 'func1',
         memorySize: 128,
-        runtime: 'nodejs10',
+        runtime: 'nodejs20',
         vpc: 'my-vpc',
         events: [{ http: 'foo' }],
       },
@@ -996,11 +996,11 @@ describe('CompileFunctions', () => {
         name: 'my-service-dev-func1',
         properties: {
           parent: 'projects/myProject/locations/us-central1',
-          runtime: 'nodejs10',
+          runtime: 'nodejs20',
           function: 'my-service-dev-func1',
           entryPoint: 'func1',
           availableMemoryMb: 128,
-          timeout: '60s',
+          timeout: '500s',
           sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
           httpsTrigger: {
             url: 'foo',
@@ -1024,7 +1024,7 @@ describe('CompileFunctions', () => {
       func1: {
         handler: 'func1',
         memorySize: 128,
-        runtime: 'nodejs10',
+        runtime: 'nodejs20',
         vpc: 'my-vpc',
         vpcEgress: 'all',
         events: [{ http: 'foo' }],
@@ -1037,11 +1037,11 @@ describe('CompileFunctions', () => {
         name: 'my-service-dev-func1',
         properties: {
           parent: 'projects/myProject/locations/us-central1',
-          runtime: 'nodejs10',
+          runtime: 'nodejs20',
           function: 'my-service-dev-func1',
           entryPoint: 'func1',
           availableMemoryMb: 128,
-          timeout: '60s',
+          timeout: '500s',
           sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
           httpsTrigger: {
             url: 'foo',
@@ -1066,7 +1066,7 @@ describe('CompileFunctions', () => {
       func1: {
         handler: 'func1',
         memorySize: 128,
-        runtime: 'nodejs10',
+        runtime: 'nodejs20',
         vpc: 'my-vpc',
         vpcEgress: 'private',
         events: [{ http: 'foo' }],
@@ -1079,11 +1079,11 @@ describe('CompileFunctions', () => {
         name: 'my-service-dev-func1',
         properties: {
           parent: 'projects/myProject/locations/us-central1',
-          runtime: 'nodejs10',
+          runtime: 'nodejs20',
           function: 'my-service-dev-func1',
           entryPoint: 'func1',
           availableMemoryMb: 128,
-          timeout: '60s',
+          timeout: '500s',
           sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
           httpsTrigger: {
             url: 'foo',
@@ -1108,7 +1108,7 @@ describe('CompileFunctions', () => {
       func1: {
         handler: 'func1',
         memorySize: 128,
-        runtime: 'nodejs10',
+        runtime: 'nodejs20',
         vpc: 'my-vpc',
         events: [{ http: 'foo' }],
       },
@@ -1122,11 +1122,11 @@ describe('CompileFunctions', () => {
         name: 'my-service-dev-func1',
         properties: {
           parent: 'projects/myProject/locations/us-central1',
-          runtime: 'nodejs10',
+          runtime: 'nodejs20',
           function: 'my-service-dev-func1',
           entryPoint: 'func1',
           availableMemoryMb: 128,
-          timeout: '60s',
+          timeout: '500s',
           sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
           httpsTrigger: {
             url: 'foo',
@@ -1151,7 +1151,7 @@ describe('CompileFunctions', () => {
       func1: {
         handler: 'func1',
         memorySize: 128,
-        runtime: 'nodejs10',
+        runtime: 'nodejs20',
         vpc: 'my-vpc',
         events: [{ http: 'foo' }],
       },
@@ -1165,11 +1165,11 @@ describe('CompileFunctions', () => {
         name: 'my-service-dev-func1',
         properties: {
           parent: 'projects/myProject/locations/us-central1',
-          runtime: 'nodejs10',
+          runtime: 'nodejs20',
           function: 'my-service-dev-func1',
           entryPoint: 'func1',
           availableMemoryMb: 128,
-          timeout: '60s',
+          timeout: '500s',
           sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
           httpsTrigger: {
             url: 'foo',
@@ -1194,7 +1194,7 @@ describe('CompileFunctions', () => {
       func1: {
         handler: 'func1',
         memorySize: 128,
-        runtime: 'nodejs10',
+        runtime: 'nodejs20',
         vpc: 'my-vpc',
         events: [{ http: 'foo' }],
         vpcEgress: 'all',
@@ -1209,11 +1209,11 @@ describe('CompileFunctions', () => {
         name: 'my-service-dev-func1',
         properties: {
           parent: 'projects/myProject/locations/us-central1',
-          runtime: 'nodejs10',
+          runtime: 'nodejs20',
           function: 'my-service-dev-func1',
           entryPoint: 'func1',
           availableMemoryMb: 128,
-          timeout: '60s',
+          timeout: '500s',
           sourceArchiveUrl: 'gs://sls-my-service-dev-12345678/some-path/artifact.zip',
           httpsTrigger: {
             url: 'foo',

@@ -188,9 +188,9 @@ describe('GoogleProvider', () => {
       expect(googleProvider.getRuntime({})).toEqual(providerRuntime);
     });
 
-    it('should return nodejs10 if neither the runtime of the function nor the one of the provider are defined', () => {
+    it('should return nodejs20 if neither the runtime of the function nor the one of the provider are defined', () => {
       serverless.service.provider.runtime = undefined;
-      expect(googleProvider.getRuntime({})).toEqual('nodejs10');
+      expect(googleProvider.getRuntime({})).toEqual('nodejs20');
     });
   });
 

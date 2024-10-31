@@ -57,7 +57,7 @@ class GoogleProvider {
         cloudFunctionRuntime: {
           // Source: https://cloud.google.com/functions/docs/concepts/exec#runtimes
           enum: [
-            'nodejs18', // recommended
+            'nodejs20', // recommended
             'python37',
             'python38',
             'python39',
@@ -296,7 +296,7 @@ class GoogleProvider {
     return (
       _.get(funcObject, 'runtime') ||
       _.get(this, 'serverless.service.provider.runtime') ||
-      'nodejs10'
+      'nodejs20'
     );
   }
 

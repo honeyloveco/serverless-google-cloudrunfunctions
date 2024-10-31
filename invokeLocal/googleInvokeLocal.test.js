@@ -123,7 +123,7 @@ describe('GoogleInvokeLocal', () => {
     const functionObj = Symbol('functionObj');
     const data = Symbol('data');
     const context = Symbol('context');
-    const runtime = 'nodejs14';
+    const runtime = 'nodejs20';
     let getFunctionStub;
     let validateEventsPropertyStub;
     let getRuntimeStub;

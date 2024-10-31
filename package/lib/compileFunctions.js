@@ -43,10 +43,10 @@ module.exports = {
       funcTemplate.properties.availableMemoryMb =
         _.get(funcObject, 'memorySize') ||
         _.get(this, 'serverless.service.provider.memorySize') ||
-        256;
+        512;
       funcTemplate.properties.runtime = this.provider.getRuntime(funcObject);
       funcTemplate.properties.timeout =
-        _.get(funcObject, 'timeout') || _.get(this, 'serverless.service.provider.timeout') || '60s';
+        _.get(funcObject, 'timeout') || _.get(this, 'serverless.service.provider.timeout') || '500s';
       funcTemplate.properties.environmentVariables =
         this.provider.getConfiguredEnvironment(funcObject);
       funcTemplate.properties.secretEnvironmentVariables =
@@ -175,9 +175,9 @@ const getFunctionTemplate = (funcObject, projectName, region, sourceArchiveUrl) 
     name: funcObject.name,
     properties: {
       parent: `projects/${projectName}/locations/${region}`,
-      availableMemoryMb: 256,
-      runtime: 'nodejs10',
-      timeout: '60s',
+      availableMemoryMb: 512,
+      runtime: 'nodejs20',
+      timeout: '500s',
       entryPoint: funcObject.handler,
       function: funcObject.name,
       sourceArchiveUrl,
