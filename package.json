@@ -1,6 +1,6 @@
 {
   "name": "serverless-google-cloudrunfunctions",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Provider plugin for the Serverless Framework which adds support for Google Cloud Functions.",
   "author": "Honeylove",
   "repository": "honeyloveco/serverless-google-cloudfunctions",
