@@ -52,8 +52,6 @@ module.exports = {
       },
     };
 
-    this.serverless.cli.log(`Updating deployment with Params: ${JSON.stringify(params, null, 4)}`);
-
     return this.provider
       .request('deploymentmanager', 'deployments', 'update', params)
       .then(() => this.monitorDeployment(deploymentName, 'update', 5000));
