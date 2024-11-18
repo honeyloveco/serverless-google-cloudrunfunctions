@@ -102,11 +102,11 @@ describe('DisplayServiceInfo', () => {
         resources: [
           { type: 'resource.which.should.be.filterered', name: 'someResource' },
           {
-            type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
+            type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
             name: 'my-service-dev-func1',
           },
           {
-            type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
+            type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
             name: 'my-service-dev-func2',
           },
         ],
@@ -141,7 +141,7 @@ describe('DisplayServiceInfo', () => {
         resources: [
           { type: 'resource.which.should.be.filterered', name: 'someResource' },
           {
-            type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
+            type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
             name: 'my-func3',
           },
         ],

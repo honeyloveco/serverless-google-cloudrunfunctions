@@ -177,7 +177,7 @@ class GoogleProvider {
       deploymentmanager: google.deploymentmanager('v2'),
       storage: google.storage('v1'),
       logging: google.logging('v2'),
-      cloudfunctions: google.cloudfunctions('v2'),
+      cloudfunctions: google.cloudfunctions('v1'),
     };
 
     this.configurationVariablesSources = {
