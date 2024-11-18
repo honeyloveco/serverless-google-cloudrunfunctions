@@ -56,7 +56,7 @@ module.exports = {
       },
     };
 
-    this.serverless.cli.log(`Params: ${JSON.stringify(params, null, 4)}`)
+    this.serverless.cli.log(`Creating deployment with Params: ${JSON.stringify(params, null, 4)}`);
 
     return this.provider
       .request('deploymentmanager', 'deployments', 'insert', params)
