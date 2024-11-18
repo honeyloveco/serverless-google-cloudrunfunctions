@@ -22,7 +22,7 @@ module.exports = {
           const name = `sls-${this.serverless.service.service}-${this.options.stage}`;
           return dep.name === name;
         });
-
+        this.serverless.cli.log(`Returning deployment: ${JSON.stringify(deployment, null, 4)}`);
         return deployment;
       });
   },
@@ -51,6 +51,8 @@ module.exports = {
         },
       },
     };
+
+    this.serverless.cli.log(`Updating eployment with Params: ${JSON.stringify(params, null, 4)}`);
 
     return this.provider
       .request('deploymentmanager', 'deployments', 'update', params)

@@ -159,7 +159,7 @@ describe('CreateDeployment', () => {
       requestStub.returns(BbPromise.resolve());
 
       return googleDeploy.createIfNotExists(foundDeployment).then(() => {
-        expect(consoleLogStub.calledOnce).toEqual(true);
+        expect(consoleLogStub.calledOnce).toEqual(false);
         expect(readFileSyncStub.called).toEqual(true);
         expect(
           requestStub.calledWithExactly('deploymentmanager', 'deployments', 'insert', params)

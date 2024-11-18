@@ -57,6 +57,7 @@ class GoogleProvider {
         cloudFunctionRuntime: {
           // Source: https://cloud.google.com/functions/docs/concepts/exec#runtimes
           enum: [
+            'nodejs18',
             'nodejs20', // recommended
             'python37',
             'python38',

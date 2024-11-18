@@ -26,7 +26,7 @@ module.exports = {
             return deployment.name === name;
           });
         }
-
+        this.serverless.cli.log(`Found deployment: ${JSON.stringify(foundDeployment, null, 4)}`);
         return foundDeployment;
       });
   },
@@ -55,6 +55,8 @@ module.exports = {
         },
       },
     };
+
+    this.serverless.cli.log(`Params: ${JSON.stringify(params, null, 4)}`)
 
     return this.provider
       .request('deploymentmanager', 'deployments', 'insert', params)

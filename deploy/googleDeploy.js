@@ -10,6 +10,7 @@ const monitorDeployment = require('../shared/monitorDeployment');
 const uploadArtifacts = require('./lib/uploadArtifacts');
 const updateDeployment = require('./lib/updateDeployment');
 const cleanupDeploymentBucket = require('./lib/cleanupDeploymentBucket');
+const setDefaults = require('../shared/utils');
 
 class GoogleDeploy {
   constructor(serverless, options) {
@@ -26,7 +27,8 @@ class GoogleDeploy {
       monitorDeployment,
       uploadArtifacts,
       updateDeployment,
-      cleanupDeploymentBucket
+      cleanupDeploymentBucket,
+      setDefaults
     );
 
     this.hooks = {

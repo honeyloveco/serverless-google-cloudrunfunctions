@@ -105,7 +105,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -142,7 +142,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -179,7 +179,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -216,7 +216,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -255,7 +255,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -296,7 +296,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -341,7 +341,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -383,7 +383,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -425,7 +425,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -472,7 +472,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -523,7 +523,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -574,7 +574,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -619,7 +619,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -674,7 +674,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -693,7 +693,7 @@ describe('CompileFunctions', () => {
           },
         },
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func2',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -733,7 +733,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -774,7 +774,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -823,7 +823,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -841,7 +841,7 @@ describe('CompileFunctions', () => {
           },
         },
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func2',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -883,7 +883,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -932,7 +932,7 @@ describe('CompileFunctions', () => {
 
       const compiledResources = [
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func1',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -950,7 +950,7 @@ describe('CompileFunctions', () => {
           },
         },
         {
-          type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+          type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
           name: 'my-service-dev-func2',
           properties: {
             parent: 'projects/myProject/locations/us-central1',
@@ -992,7 +992,7 @@ describe('CompileFunctions', () => {
 
     const compiledResources = [
       {
-        type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+        type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
         name: 'my-service-dev-func1',
         properties: {
           parent: 'projects/myProject/locations/us-central1',
@@ -1033,7 +1033,7 @@ describe('CompileFunctions', () => {
 
     const compiledResources = [
       {
-        type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+        type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
         name: 'my-service-dev-func1',
         properties: {
           parent: 'projects/myProject/locations/us-central1',
@@ -1075,7 +1075,7 @@ describe('CompileFunctions', () => {
 
     const compiledResources = [
       {
-        type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+        type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
         name: 'my-service-dev-func1',
         properties: {
           parent: 'projects/myProject/locations/us-central1',
@@ -1118,7 +1118,7 @@ describe('CompileFunctions', () => {
 
     const compiledResources = [
       {
-        type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+        type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
         name: 'my-service-dev-func1',
         properties: {
           parent: 'projects/myProject/locations/us-central1',
@@ -1161,7 +1161,7 @@ describe('CompileFunctions', () => {
 
     const compiledResources = [
       {
-        type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+        type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
         name: 'my-service-dev-func1',
         properties: {
           parent: 'projects/myProject/locations/us-central1',
@@ -1205,7 +1205,7 @@ describe('CompileFunctions', () => {
 
     const compiledResources = [
       {
-        type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+        type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
         name: 'my-service-dev-func1',
         properties: {
           parent: 'projects/myProject/locations/us-central1',

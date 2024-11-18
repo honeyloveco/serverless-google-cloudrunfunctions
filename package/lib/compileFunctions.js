@@ -171,7 +171,7 @@ const validateVpcConnectorEgressProperty = (vpcEgress) => {
 const getFunctionTemplate = (funcObject, projectName, region, sourceArchiveUrl) => {
   //eslint-disable-line
   return {
-    type: 'gcp-types/cloudfunctions-v1:projects.locations.functions',
+    type: 'gcp-types/cloudfunctions-v2:projects.locations.functions',
     name: funcObject.name,
     properties: {
       parent: `projects/${projectName}/locations/${region}`,
