@@ -138,7 +138,7 @@ describe('UpdateDeployment', () => {
       requestStub.returns(BbPromise.resolve());
 
       return googleDeploy.update(deployment).then(() => {
-        expect(consoleLogStub.calledOnce).toEqual(false);
+        expect(consoleLogStub.calledOnce).toEqual(true);
         expect(readFileSyncStub.called).toEqual(true);
         expect(
           requestStub.calledWithExactly('deploymentmanager', 'deployments', 'update', params)
