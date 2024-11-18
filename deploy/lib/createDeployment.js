@@ -26,7 +26,7 @@ module.exports = {
             return deployment.name === name;
           });
         }
-        this.serverless.cli.log(`Found deployment: ${JSON.stringify(foundDeployment, null, 4)}`);
+
         return foundDeployment;
       });
   },
